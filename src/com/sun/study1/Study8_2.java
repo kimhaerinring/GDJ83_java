@@ -2,7 +2,7 @@ package com.sun.study1;
 
 import java.util.Scanner;
 
-public class Study8_1 {
+public class Study8_2 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int tan = 3;
@@ -10,19 +10,22 @@ public class Study8_1 {
 			System.out.println("1.단발 2.점사");
 			int select = sc.nextInt();
 			System.out.println(select);
+			int count = 0;
+			String sound = "";
 			if (select == 1) {
-				for (int j = 0; j < 30; j++) {
-					System.out.println(j + 1 + "번 탕");
-				}
+				count = 30;
+				sound = "탕";
 			} else {
-				for (int j = 0; j < 10; j++) {
-					System.out.println(j + 1 + "번탕");
-					
-					
-					
-					
-				}
+				count = 10;
+				sound = "타타탕";
+			}
+			// for 문
+
+			for (int j = 0; j < count; j++) {
+				System.out.println(sound);
 			}
 		}
+
 	}
+
 }
