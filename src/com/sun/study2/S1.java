@@ -7,10 +7,22 @@ public class S1 {
 		// 같은 데이터 타입만 모을 수 있다.
 		// 배열 선언
 		// 모을려고 하는 데이터 타입명[ ] 변수명=new 모을려고 하는 데이터 타입명[갯수]
+		int num = 0;
+		double n2 = 0.0;
+		String name = null;
+
 		int[] a = new int[3];
+		int[] ar = { 1, 2, 3 };
+
 		String[] names = new String[2];
+
 		System.out.println(a);
 		System.out.println(names);
+		System.out.println(a[0]);
+		System.out.println(names[0]);
+		a[0] = 50;
+		a = ar;
+		System.out.println(a[0]);
 	}
 
 }
