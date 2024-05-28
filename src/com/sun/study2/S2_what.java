@@ -11,6 +11,7 @@ public class S2_what {
 		String[] names = null;
 		int[] kor = null;
 		int[] math = null;
+		int[] eng = null;
 		int[] totals = null;
 		double[] avgs = null;
 
@@ -27,6 +28,7 @@ public class S2_what {
 				names = new String[c];
 				kor = new int[c];
 				math = new int[c];
+				eng = new int[c];
 				totals = new int[c];
 				avgs = new double[c];
 
@@ -39,18 +41,20 @@ public class S2_what {
 					kor[i] = sc.nextInt();
 					System.out.println(names[i] + "의 수학점수 입력");
 					math[i] = sc.nextInt();
-					totals[i] = math[i] + kor[i];
+					System.out.println(names[i] + "의 영어점수 입력");
+					eng[i] = sc.nextInt();
+					totals[i] = math[i] + kor[i] + eng[i];
 					System.out.println(totals[i] + "총점수");
-					avgs[i] = totals[i] / 2.0;
+					avgs[i] = totals[i] / 3.0;
 					System.out.println(avgs[i] + "평균");
 				}
 				break;
 			case 2:
 
 				for (int i = 0; i < names.length; i++) {
-					System.out.println("번호\t이름\t국어\t수학\t총점");
-					System.out.println(
-							(num[i] + ".") + "\t" + names[i] + "\t" + kor[i] + "\t" + math[i] + "\t" + totals[i]);
+					System.out.println("번호\t이름\t국어\t수학\t영어\t총점");
+					System.out.println((num[i] + ".") + "\t" + names[i] + "\t" + kor[i] + "\t" + math[i] + "\t" + eng[i]
+							+ "\t" + totals[i]);
 				}
 				break;
 			case 3:
@@ -59,9 +63,9 @@ public class S2_what {
 
 				for (int i = 0; i < num.length; i++) {
 					if (n == num[i]) {
-						System.out.println("번호\t이름\t국어\t수학\t총점");
-						System.out.println(
-								(num[i] + ".") + "\t" + names[i] + "\t" + kor[i] + "\t" + math[i] + "\t" + totals[i]);
+						System.out.println("번호\t이름\t국어\t수학\t영어\t총점");
+						System.out.println((num[i] + ".") + "\t" + names[i] + "\t" + kor[i] + "\t" + math[i] + "\t"
+								+ eng[i] + "\t" + totals[i]);
 					} else {
 						System.out.println("잘못입력하셨습니다");
 						break;
@@ -69,8 +73,14 @@ public class S2_what {
 				}
 				break;
 			case 4:
-				System.out.println("성적 순으로 보여드리겠습니다.");
-				for (int i = 0; i < avgs.length; i++) {
+				System.out.println("학생 성적 순");
+				for (int i = 0; i < avgs.length - 1; i++) {
+					for (int j = i + 1; j < avgs.length; i++) {
+						if (avgs[i] < avgs[j]) {
+							names[i] = names[j];
+							num[i] = num[j];
+						}
+					}
 					// 정렬 알고리즘을 이용해서 성적순으로 나타내기
 				}
 				break;
