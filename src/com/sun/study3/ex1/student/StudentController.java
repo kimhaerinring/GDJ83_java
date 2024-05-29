@@ -15,10 +15,10 @@ public class StudentController {
 			int select = sc.nextInt();
 
 			if (select == 1) {
+				System.out.println("힉생정보 입력 코드 작성해");
 				StudentService m = new StudentService();
 				m.makestudent();
 
-				System.out.println("힉생정보 입력 코드 작성해");
 			} else if (select == 2) {
 				System.out.println("전체 정보 출력 코드 작성해");
 			} else if (select == 3) {
