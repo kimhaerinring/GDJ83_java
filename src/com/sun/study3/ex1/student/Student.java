@@ -1,4 +1,4 @@
-package com.sun.study3;
+package com.sun.study3.ex1.student;
 
 public class Student {
 	int num;
