@@ -4,7 +4,7 @@ public class StudentMain { // test할때 사용
 
 	public static void main(String[] args) {
 		StudentController s = new StudentController();
-		s.start(); // studentcotroller에 있는 코드 실행
+		s.start();
 
 	}
 
