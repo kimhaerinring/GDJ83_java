@@ -10,6 +10,7 @@ public class S2_2_2 {
 		// 이름 앞에 숫자 출력시키기
 		// 1. 학생 정보입력 2. 학생 정보 출력 3. 프로그램 종료
 		Scanner sc = new Scanner(System.in);
+		System.out.println("1.학생 정보 입력 2.학생 정보 출력 3. 프로그램 종료");
 		boolean flag = true;
 		int c = sc.nextInt();
 		int[] num = new int[c];
@@ -19,7 +20,6 @@ public class S2_2_2 {
 		int[] totals = new int[c];
 		double[] avgs = new double[c];
 
-		System.out.println("1.학생 정보 입력 2.학생 정보 출력 3. 프로그램 종료");
 		while (flag) {
 			int select = sc.nextInt();
 
