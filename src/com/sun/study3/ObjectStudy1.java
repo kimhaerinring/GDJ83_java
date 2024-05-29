@@ -3,6 +3,11 @@ package com.sun.study3;
 public class ObjectStudy1 {
 
 	public static void main(String[] args) {
+		StudyReturn se = new StudyReturn();
+		int result = se.t1();
+		se.t2();
+
+		System.out.println(result);
 		// 학생 객체 생성
 		// new 클래스명() -> 객체의 주소가 반환
 		/*
