@@ -14,9 +14,10 @@ public class Ex3Main {
 		car2.brand = "A7";
 		car2.company = "Audi";
 
-		car.info();
-
-		car2.info();
+		// car.info();
+		// car2.info();
+		Cal cal = new Cal();
+		cal.hap(10, 2L);
 
 	}
 
