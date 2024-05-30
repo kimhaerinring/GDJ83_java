@@ -10,11 +10,14 @@ public class Car {
 	// 각각의 객체 내에서만 사용가능
 	// this는 생략 가능
 	public void info() {
-		System.out.println("info");
-		System.out.println(this);
+		// System.out.println("info");
+		// System.out.println(this);
 		System.out.println(this.color);
 		System.out.println(brand);
-		System.out.println(company);
+		this.go();
+	}
 
+	public void go() {
+		System.out.println(this.company);
 	}
 }
