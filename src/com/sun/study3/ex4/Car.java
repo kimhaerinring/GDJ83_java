@@ -30,11 +30,11 @@ public class Car {
 
 	public Car(int price) {
 
-		/* this.price = price;
-		this.color = "Black";
-		this.brand = "k3";
-		this.company = "kia";*/
-		this(price,"black";)
+		/*
+		 * this.price = price; this.color = "Black"; this.brand = "k3"; this.company =
+		 * "kia";
+		 */
+		this(price, "black");
 
 	}
 
