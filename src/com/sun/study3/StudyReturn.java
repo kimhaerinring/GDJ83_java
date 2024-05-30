@@ -5,11 +5,12 @@ import java.util.Random;
 public class StudyReturn {
 	// 접근지정자[그 외 지정자] 리턴 타입 메서드명([메개변수 선언]){{ }
 
-	public void t5(Test t) {
+	public Test t5(Test t) {
 		System.out.println(t.level);
 		t.level = 200;
 		t = new Test();
 		t.level = 500;
+		return t;
 	}
 
 	// ㅁ매개변수 선언

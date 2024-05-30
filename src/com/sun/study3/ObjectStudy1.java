@@ -12,8 +12,10 @@ public class ObjectStudy1 {
 
 		Test test = new Test();
 		test.level = 1;
+		Test test2 = se.t5(test);
 		se.t5(test);
 		System.out.println(test.level);
+		System.out.println(test2.level);
 		// System.out.println(result);
 		// 학생 객체 생성
 		// new 클래스명() -> 객체의 주소가 반환

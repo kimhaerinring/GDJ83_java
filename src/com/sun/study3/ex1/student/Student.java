@@ -14,9 +14,5 @@ public class Student {
 	// 메서드 선언 공식
 	// public static void main(String[]args){}
 	// 접근지정자 [그외지정자] 리턴타입 매서드명 ([매개변수들 선언]){}
-	public void info() {
-		int num = 10;
-		System.out.println(" info 실행");
-	}
 
 }
