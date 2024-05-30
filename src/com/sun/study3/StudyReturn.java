@@ -5,6 +5,23 @@ import java.util.Random;
 public class StudyReturn {
 	// 접근지정자[그 외 지정자] 리턴 타입 메서드명([메개변수 선언]){{ }
 
+	public void t5(Test t) {
+		System.out.println(t.level);
+		t.level = 200;
+		t = new Test();
+		t.level = 500;
+	}
+
+	// ㅁ매개변수 선언
+	public void t4(int sal) {
+		// 프리랜서 월급을 받아서 3.3%제외한 실수령액 계산
+		// 실수령액=월급-월급*0.033
+		double result = sal - sal * 0.033;
+		System.out.println(result);
+
+		sal = 100;
+	}
+
 	// 리턴 타입의 제한은 없음
 	public int t1() {
 		int num = 3;

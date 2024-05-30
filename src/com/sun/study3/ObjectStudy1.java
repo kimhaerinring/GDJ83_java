@@ -4,10 +4,17 @@ public class ObjectStudy1 {
 
 	public static void main(String[] args) {
 		StudyReturn se = new StudyReturn();
-		int result = se.t1();
-		se.t2();
+		// int result = se.t1();
+		int n = se.t1();
+		int sal = 5000000;
+		se.t4(sal);
+		System.out.println(sal);
 
-		System.out.println(result);
+		Test test = new Test();
+		test.level = 1;
+		se.t5(test);
+		System.out.println(test.level);
+		// System.out.println(result);
 		// 학생 객체 생성
 		// new 클래스명() -> 객체의 주소가 반환
 		/*
