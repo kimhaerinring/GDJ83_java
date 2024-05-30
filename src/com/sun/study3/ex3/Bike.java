@@ -3,9 +3,10 @@ package com.sun.study3.ex3;
 
 public class Bike {
 	String color;
-	String brand;
+	int price;
 
-	public void info() {
-		System.out.println(this);
+	public Bike(String color, int price) {
+		this.color = color;
+		this.price = price;
 	}
 }
