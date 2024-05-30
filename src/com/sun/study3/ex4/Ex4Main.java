@@ -6,5 +6,8 @@ public class Ex4Main {
 		Car car = new Car();
 		car.info();
 
+		Car car2 = new Car(200);
+		car2.info();
+
 	}
 }

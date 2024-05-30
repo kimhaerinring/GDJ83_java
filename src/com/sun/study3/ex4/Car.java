@@ -18,14 +18,39 @@ public class Car {
 //접근시정자 클래스명과 동일한 이름([매개변수선언]){}
 	public Car() {
 		// 기본 생성자
-		System.out.println("자동차가만들어 집니다");
-		this.color = "Black";
-		this.brand = "k3";
-		this.company = "kia";
-		this.price = 2500;
+		// System.out.println("자동차가만들어 집니다");
+		/*
+		 * this.color = "Black"; this.brand = "k3"; this.company = "kia"; this.price =
+		 * 2500;
+		 */
+		// this()자기자신의 또다른 생성자를 호출
+		// this() 생성자 내에서 제일 첫줄에 위치해야함 ,위에 코드가 없어야함
+		this(2500);
 	}
 
 	public Car(int price) {
+
+		/* this.price = price;
+		this.color = "Black";
+		this.brand = "k3";
+		this.company = "kia";*/
+		this(price,"black";)
+
+	}
+
+	public Car(int price, String color) {
+		/*
+		 * this.price = price; this.color = color; this.company = "kia"; this.price =
+		 * 2500;
+		 */
+		this(price, color, "k3");
+	}
+
+	public Car(int price, String color, String brand) {
+		this.price = price;
+		this.color = color;
+		this.brand = "k3";
+		this.company = "kia";
 
 	}
 
