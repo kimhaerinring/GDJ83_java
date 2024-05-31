@@ -26,6 +26,10 @@ public class S3Main {
 		dropShip[1] = penguin;
 
 		Tiger ani = (Tiger) dropShip[0];
+		Eagle eagle = new Eagle();
+		Airplane airplane = new Airplane();
 
+		Fly fly = eagle;
+		fly = airplane;
 	}
 }

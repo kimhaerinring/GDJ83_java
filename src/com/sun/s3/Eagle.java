@@ -1,15 +1,20 @@
 package com.sun.s3;
 
-public class Eagle extends Bird {
+public class Eagle extends Bird implements Fly {
 
 	@Override
-	public void fly() {
-		// TODO Auto-generated method stub
+	public void flyAble() {
 
 	}
 
 	@Override
 	public void sleep() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void land() {
 		// TODO Auto-generated method stub
 
 	}
