@@ -9,6 +9,10 @@ public class Student {
 	private int total;
 	private int avg;
 
+	public void info() {
+		System.out.println(this.num);
+	}
+
 	public int getNum() {
 		return num;
 	}

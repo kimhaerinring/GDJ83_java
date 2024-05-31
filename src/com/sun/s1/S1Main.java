@@ -7,6 +7,7 @@ public class S1Main {
 	public static void main(String[] args) {
 
 		MidStudent ms = new MidStudent();
+		ms.info();
 
 	}
 
