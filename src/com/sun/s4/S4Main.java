@@ -8,6 +8,9 @@ public class S4Main {
 		Car.company = "";
 		// 클래서명.변수명();
 		Car.info();
+		System.out.println(Math.E);
+		double b = Math.abs(1.2);
+		System.out.println(b);
 	}
 
 }
