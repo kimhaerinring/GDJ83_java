@@ -1,16 +1,13 @@
 package com.sun.s1;
 
-import com.sun.s2.Korea;
+import com.sun.s2.MidStudent;
 
 public class S1Main {
+
 	public static void main(String[] args) {
 
-		Korea korea = new Korea();
-		korea.setPop(20);
+		MidStudent ms = new MidStudent();
 
-		int p = korea.getPop();
-		System.out.println(p);
-		// member.name = "test";
-		// member.age=20;
 	}
+
 }
