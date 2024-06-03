@@ -33,6 +33,6 @@ public class S1Main {
 			ch = n.charAt(i);
 			System.out.println(ch);
 		}
-
+		System.out.println(n.length() * 1000 + "원입니다.");
 	}
 }
