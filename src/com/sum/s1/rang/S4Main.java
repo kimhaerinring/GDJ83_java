@@ -21,13 +21,14 @@ public class S4Main {
 		result = name.substring(idx + 1);
 		System.out.println(result);
 
-		/*
-		 * switch(result){ case "png": System.out.println("이미지 파일립니다."); break; case
-		 * "jpg":
-		 * 
-		 * break; }
-		 */
-		// String[] files = ("jpg.png,gif ,jpeg,jiff");
+//		
+//		  switch(result){ case "png": System.out.println("이미지 파일립니다."); break; case
+//		  "jpg":
+//		  
+//		  break; }
+//		 
+//		 String[] files = ("jpg.png,gif ,jpeg,jiff");
+//		
 
 	}
 
