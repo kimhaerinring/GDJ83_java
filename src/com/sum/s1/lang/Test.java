@@ -1,4 +1,4 @@
-package com.sum.s1.rang;
+package com.sum.s1.lang;
 
 public class Test {
 	int age = 10;
