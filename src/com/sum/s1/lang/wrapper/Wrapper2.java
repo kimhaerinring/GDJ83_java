@@ -6,7 +6,7 @@ public class Wrapper2 {
 
 	public static void main(String[] args) {
 		// 비번 길이는 최소 6글자 이상
-		// 대소문자, 숫자 1개이상
+		// 대소문자, 숫자 1개이상 isDigit()
 		Scanner sc = new Scanner(System.in);
 		System.out.println("pw를 입력");
 		String pw = sc.next();
