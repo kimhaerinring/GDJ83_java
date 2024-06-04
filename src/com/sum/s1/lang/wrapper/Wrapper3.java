@@ -53,9 +53,9 @@ public class Wrapper3 {
 		int[] ch = { 2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 5 };
 		int sum = 0;
 		for (int i = 0; i < 12; i++) {
-
+			int io = Integer.parseInt(jumin.substring(i, (i + 1)));
 			sum += ch[i] * Integer.parseInt(jumin.substring(i, (i + 1)));
-
+			System.out.println(io + "*" + ch[i] + "=" + sum);
 		}
 		int total = 11 - sum % 11;
 
@@ -63,7 +63,7 @@ public class Wrapper3 {
 			total = 0;
 		if (total == 11)
 			total = 1;
-
+		System.out.println(total);
 		if (total == Integer.parseInt(jumin.substring(12))) {
 			System.out.println("정확한 주민번호입니다.");
 		} else {
