@@ -11,15 +11,29 @@ public class Wrapper2 {
 		System.out.println("pw를 입력");
 		String pw = sc.next();
 		String result = "최소 1 이상의 대문자가 있어야함";
+		boolean upper = false;
+		boolean lower = false;
+		boolean digit = false;
 		for (int i = 0; i < pw.length(); i++) {
 			char ch = pw.charAt(i);
 			if (Character.isUpperCase(ch)) {
-				result = "통과";
-				break;
+				upper = true;
+			} else if (Character.isLowerCase(ch)) {
+				lower = true;
+			} else if (Character.isDigit(ch)) {
+				digit = true;
+			} else {
+
 			}
 
 		}
-		System.out.println(result);
+		if (upper && lower && digit) {
+			System.out.println("통과");
+		} else {
+			System.out.println("fail");
+
+		}
+
 	}
 
 }

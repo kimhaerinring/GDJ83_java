@@ -54,8 +54,8 @@ public class Wrapper3 {
 		int sum = 0;
 		for (int i = 0; i < 12; i++) {
 			int io = Integer.parseInt(jumin.substring(i, (i + 1)));
-			sum += ch[i] * Integer.parseInt(jumin.substring(i, (i + 1)));
-			System.out.println(io + "*" + ch[i] + "=" + sum);
+			sum += ch[i] * io;
+			// System.out.println(io + "*" + ch[i] + "=" + sum);
 		}
 		int total = 11 - sum % 11;
 
