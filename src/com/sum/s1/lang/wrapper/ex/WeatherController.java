@@ -39,7 +39,7 @@ public class WeatherController {
 				dtos = weatherService.addWeather(scanner, dtos);
 			} else if (select == 4) {
 				System.out.println("날씨 정보 삭제");
-
+				dtos = weatherService.removeWeather(scanner, dtos);
 			} else if (select == 5) {
 				System.out.println("종료");
 				break;

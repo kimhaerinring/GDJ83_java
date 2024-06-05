@@ -92,5 +92,23 @@ public class WeatherService {
 		newAr[dtos.length] = weatherDTO;
 		return newAr;
 	}
+	// removeWeather 이름
+	// 기존 배열에서 하나를 삭제
+	// 도시명을 입력 받아서 일치하는 날씨 정보 삭제
+
+	public WeatherDTO[] removeWeather(Scanner scanner, WeatherDTO[] dtos) {
+		WeatherDTO weatherdto = new WeatherDTO();
+		System.out.println("삭제 할 도시명을 입력하세요");
+		WeatherDTO[] newAr = new WeatherDTO[dtos.length - 1];
+		String select = scanner.next();
+		int j = 0;
+		for (int i = 0; i < dtos.length; i++) {
+			if (!select.equals(dtos[i].getCity())) {
+				newAr[j++] = dtos[i];
+			}
+			return newAr;
+		}
+		return newAr;
+	}
 
 }
