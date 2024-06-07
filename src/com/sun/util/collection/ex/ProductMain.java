@@ -11,8 +11,14 @@ public class ProductMain {
 		// 신규 통장 개설 - 계좌번호 , 예금주, 은행명, 비밀번호, 잔고.통장 상품명
 		// 객체= 알바 클레스= 알바가해야하일 정의
 		ProductService productService = new ProductService();
-
 		ArrayList<ProductDTO> ar = productService.init();
+		// productService.addProduct(ar);
+		int result = productService.removeProduct(ar);
+		if (result > 0) {
+			System.out.println("성공");
+		} else {
+			System.out.println("실패");
+		}
 		for (int i = 0; i < ar.size(); i++) {
 			System.out.println(ar.get(i).getName());
 			System.out.println(ar.get(i).getPrice());

@@ -43,6 +43,25 @@ public class ProductService {
 		dto.setName(scanner.next());
 		System.out.println(" 재고를 입력하세요");
 		dto.setStock(scanner.nextInt());
+		ar.add(dto);
+	}
+	// 기존의 가방을 받아서 제품을 삭제 , 물건명을 입력받아서 삭제
+
+	public int removeProduct(ArrayList<ProductDTO> ar) {
+		Scanner scanner = new Scanner(System.in);
+		ProductDTO dto = new ProductDTO();
+		System.out.println("삭제 할 제품 명을 입력하세요");
+		String name = scanner.next();
+		int result = 0;
+		for (int i = 0; i < ar.size(); i++) {
+			if (name.equals(ar.get(i).getName())) {
+				ar.remove(i);
+				result = 1;
+				break;
+			}
+
+		}
+		return result;
 	}
 
 }
