@@ -1,6 +1,7 @@
 package com.sum.s1.lang.wrapper.ex;
 
 import java.util.Scanner;
+import java.util.StringTokenizer;
 
 public class WeatherService {
 	// Business Layer
@@ -23,9 +24,26 @@ public class WeatherService {
 		System.out.println(info);
 		// System.out.println(result);
 		info = info.replace(",", "-");
-		WeatherDTO[] dtos = this.getWeathers(info);
+		WeatherDTO[] dtos = this.useTokenizer(info); // this.getWeathers(info);
 		return dtos;
 
+	}
+
+	private WeatherDTO[] useTokenizer(String info) {
+
+		StringTokenizer st = new StringTokenizer(info, "-");
+		// ArrayList<WeatherDTO> arrays= new ArrayList<WeatherDTO>();
+		WeatherDTO[] dtos = new WeatherDTO[st.countTokens() / 4];
+
+		for (int i = 0; i < dtos.length; i++) {
+			dtos[i] = new WeatherDTO();
+			dtos[i].setCity(st.nextToken().trim());
+			dtos[i].setGion(Double.parseDouble(st.nextToken().trim()));
+			dtos[i].setStatus(st.nextToken().trim());
+			dtos[i].setHumidity(Integer.parseInt(st.nextToken().trim()));
+
+		}
+		return dtos;
 	}
 
 	private WeatherDTO[] getWeathers(String info) {
@@ -104,9 +122,13 @@ public class WeatherService {
 		int j = 0;
 		for (int i = 0; i < dtos.length; i++) {
 			if (!select.equals(dtos[i].getCity())) {
+				if (j == dtos.length && j == i) {
+					System.out.println("찾으시는 도시가 없습니다.");
+					return dtos;
+				}
 				newAr[j++] = dtos[i];
 			}
-			return newAr;
+
 		}
 		return newAr;
 	}
